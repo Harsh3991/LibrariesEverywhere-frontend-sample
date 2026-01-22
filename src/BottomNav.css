@@ -1,0 +1,44 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 414px;
+  height: 65px;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  padding-bottom: 10px; /* Safe area for modern phones */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+}
+
+.nav-item.active {
+  color: #FF6B6B;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain; /* Ensure images fit without distortion */
+}
+
+.nav-divider {
+  width: 1.4px; /* Increased from 1px for uniform boldness */
+  background-color: #979899; /* Darker color for visibility */
+  height: 65%; /* 60% of parent height */
+  align-self: center; /* Center vertically */
+  flex-shrink: 0;
+}
